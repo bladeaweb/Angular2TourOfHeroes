@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<h2>Top of Heroes</h2>
+<div class="grid grid-pad">
+  <a class="col-1-4"
+    *ngFor="let hero of heroes"
+    [routerLink]="['/details', hero.id]">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </a>
+</div>

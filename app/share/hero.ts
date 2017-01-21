@@ -1,3 +1,4 @@
-/**
- * Created by blade on 21.01.2017.
- */
+export class Hero {
+  id: number;
+  name: string;
+}
